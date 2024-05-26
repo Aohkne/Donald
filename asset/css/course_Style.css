@@ -1,0 +1,170 @@
+/* Header */
+html {
+    background-color: var(--primary-color);
+
+}
+
+/* 404 */
+.img_404 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* display: none; */
+    height: 100vh;
+}
+
+/* app */
+
+.app {}
+
+.header_container {}
+
+.nav {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.nav-logo-link img {
+    height: 60px;
+}
+
+
+.nav-user {
+    padding-top: 40px;
+    color: var(--text-color);
+}
+
+.user-icon {
+    font-size: 2rem;
+}
+
+.user-name {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+
+/* Menu */
+
+.body_container {
+    /* height: 100vh; */
+}
+
+.content_container {
+    border-top: 2px solid #6f6f68;
+    padding: 0 20px;
+}
+
+.menu {
+    height: 100vh;
+    border-right: 2px solid #6f6f68;
+    padding: 0 10px;
+    /* opacity: 0.6; */
+}
+
+.menu-icon i {
+    margin: 15px 0;
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.menu-icon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.menu-item {
+    display: block;
+}
+
+.menu-title {
+    display: block;
+    padding: 5px;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+
+.menu-content {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.menu-title:hover,
+.menu-content:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #DDDAA7;
+}
+
+/* Video container */
+
+.video_container {}
+
+.video_container video {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.video-title {
+    padding: 5px 0;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+/* bot */
+
+
+.bot_link {
+    width: 100%;
+    padding: 0 10px;
+    position: fixed;
+    top: 90%;
+    display: flex;
+    z-index: 1;
+    justify-content: right;
+}
+
+.bot-img {
+    height: 50px;
+    animation: 1.5s infinite bot-animation;
+}
+
+@keyframes bot-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(25deg);
+    }
+
+    20% {
+        transform: rotate(-25deg);
+    }
+
+    30% {
+        transform: rotate(25deg);
+    }
+
+    40% {
+        transform: rotate(-25deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
