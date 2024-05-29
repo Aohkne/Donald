@@ -342,6 +342,19 @@
     }
 
 
+    .ourMember-page-name {
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+
+    .ourMember-page-link {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1.4rem;
+    }
+
     /* Footer */
 
     .footer-container {

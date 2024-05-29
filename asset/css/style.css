@@ -749,7 +749,6 @@
     margin: 10px 0;
 }
 
-.ourMember-page-contact {}
 
 .ourMember-page-link {
     text-decoration: none;
@@ -765,23 +764,6 @@
     opacity: 0.8;
 }
 
-.ourMember-page-btn {
-    text-align: center;
-    padding: 10px 50px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 1);
-    margin: 30px auto;
-}
-
-.ourMember-page-btn:hover {
-    background-color: var(--green-color);
-    color: var(--white-color);
-    cursor: pointer;
-}
 
 /* Footer */
 
