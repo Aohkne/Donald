@@ -1,3 +1,20 @@
+
+// open nav menu
+let iconMenu = document.querySelector('.fa-bars');
+let navMenu = document.querySelector('.nav-menu');
+
+iconMenu.onclick = function () {
+    console.lo
+    if (navMenu.style.display == 'none') {
+        iconMenu.classList.add('fa-x');
+        navMenu.style.display = 'block';
+    } else {
+        iconMenu.classList.remove('fa-x');
+        navMenu.style.display = 'none';
+    }
+
+}
+
 //slider
 let sliderList = document.querySelector('.slider-list');
 let sliderItem = document.querySelectorAll('.slider-item');
