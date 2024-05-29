@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donald</title>
 
     <!-- link css -->
     <link rel="stylesheet" href="asset/css/style.css">
@@ -23,15 +23,21 @@
     </div>
 
     <!-- app -->
-    <div class="app hide-on-moblile-tablet">
+    <div class="app ">
 
         <!-- nav -->
-        <div class="header__container grid ">
+        <div class="header__container">
             <div class="nav row">
-                <img class="nav__logo col l-2" src="./asset/img/Home/logo.png" alt="">
+                <a href="./index.html" class="logo-link col l-2 m-3 c-3">
+                    <img class="nav__logo" src="./asset/img/Home/logo.png" alt="">
+                </a>
 
-                <div class="nav-menu col l-7">
-                    <ul class="nav-list">
+                <div class="nav-iconMenu col l-0 m-0 c-2  hide-on-PC hide-on-tablet ">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="nav-menu col l-7 m-5 c-12">
+                    <ul class="nav-list ">
                         <li class="nav-items">
                             <a href="#home_page-bg" class="nav-items__link">Home</a>
                         </li>
@@ -47,9 +53,11 @@
                     </ul>
                 </div>
 
-                <div class="nav-user col l-3">
+                <div class="nav-user col l-3 m-4 c-7 hide-on-moblile">
                     <a href="" class="nav-users__link">Get Started</a>
                 </div>
+
+
             </div>
 
 
@@ -61,146 +69,187 @@
         </a>
 
         <!-- Home PAGE -->
-        <div style="background-image: url(./asset/img/Home/img_Home.png);" id="home_page-bg" class="">
+        <div id="home_page-bg" class="">
 
+            <img src="./asset/img/Home/img_Home.png" alt="">
 
             <div class="home_page grid wide">
-                <div class="home_page-container col l-4">
-                    <h1 class="home_page-title col l-12">CONTENT</h1>
-                    <p class="home_page-content col l-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Maecenas
-                        porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada
-                        libero,
-                        sit amet commodo magna eros quis urna.
+                <div class="home_page-container col l-4 m-12 c-12">
+                    <h1 class="home_page-title col l-12 hide-on-moblile">Donald</h1>
+                    <p class="home_page-content col l-12">The Donald Project offers online courses, early intervention
+                        therapy, psychological counselling, life skills, and social communication classes for autistic
+                        children and their families. It aims to assist them in reaching their full potential,
+                        integrating into society, and fostering a supportive environment.
                     </p>
-                    <button class="home_page-btn l-6"> More Info</button>
+                    <button class="home_page-btn l-6 hide-on-moblile"> More Info</button>
 
                 </div>
             </div>
+
         </div>
 
 
 
         <!-- Explore PAGE -->
-        <div style="background-image: url(./asset/img/Explore/img_Explore.png);" id="explore_page-bg" class="grid">
-            <div class="explore_page grid wide">
+        <div id="explore_page-bg" class="grid">
+            <img src="./asset/img/Explore/img_Explore.png" alt="">
 
-                <div class="container-explore_page">
-                    <h1 class="title-explore_page">CONTENT</h1>
-                    <p class="content-explore_page">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
-                        malesuada
-                        libero, sit amet commodo magna eros quis urna.
-                    </p>
+            <div class="explore_page ">
+
+                <div class="grid wide">
+                    <div class="container-explore_page">
+                        <h1 class="title-explore_page">CONTENT</h1>
+                        <p class="content-explore_page">Below are articles and blogs about this condition. You can refer
+                            to it by clicking on the read more section
+                        </p>
+                    </div>
+
+                    <div class="blog-explore_page ">
+
+                        <div class="row">
+
+                            <div class="blog-items col l-5 m-5 c-5">
+                                <div class="blog-content">
+
+                                    <div class="blog-info">
+                                        <div class="blog-author">
+                                            Shannon Des Roches Rosa
+                                        </div>
+                                        <div class="blog-header">Thinking Autism Guide</div>
+                                        <a href="https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=4132041&q=site:https%3A%2F%2Fwww.thinkingautismguide.com%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss"
+                                            class="blog-btn-link">
+                                            <button class="blog-btn">Read now</button>
+                                        </a>
+                                    </div>
+                                    <div class="blog-img">
+                                        <img src="./asset/img/Explore/img1_blog.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="blog-items col l-3 m-5 c-5">
+                                <div class="blog-content">
+
+                                    <div class="blog-info">
+                                        <div class="blog-author">Seattle Children’s</div>
+                                        <div class="blog-header">The Autism Blog</div>
+                                        <a href="https://www.seattlechildrens.org/clinics/autism-center/the-autism-blog/"
+                                            class="blog-btn-link">
+                                            <button class="blog-btn">Read now</button>
+                                        </a>
+                                    </div>
+                                    <div class="blog-img">
+                                        <img src="./asset/img/Explore/img2_blog.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="blog-items col l-3 m-5 c-6 hide-on-moblile">
+                                <div class="blog-content">
+                                    <div class="blog-info">
+                                        <div class="blog-author">Author</div>
+                                        <div class="blog-header">CONTENT 3</div>
+                                        <a href="" class="blog-btn-link">
+                                            <button class="blog-btn">Read now</button>
+                                        </a>
+                                    </div>
+                                    <div class="blog-img">
+                                        <img src="./asset/img/Explore/img3_blog.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-items col l-3 m-5 c-6 hide-on-moblile">
+                                <div class="blog-content">
+                                    <div class="blog-info">
+                                        <div class="blog-author">Author</div>
+                                        <div class="blog-header">CONTENT 4</div>
+                                        <a href="" class="blog-btn-link">
+                                            <button class="blog-btn">Read now</button>
+                                        </a>
+                                    </div>
+                                    <div class="blog-img">
+                                        <img src="./asset/img/Explore/img4_blog.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-items col l-3 m-5 c-6 hide-on-moblile-tablet">
+                                <div class="blog-content">
+                                    <div class="blog-info">
+                                        <div class="blog-author">Author</div>
+                                        <div class="blog-header">CONTENT 5</div>
+                                        <a href="" class="blog-btn-link">
+                                            <button class="blog-btn">Read now</button>
+                                        </a>
+                                    </div>
+                                    <div class="blog-img">
+                                        <img src="./asset/img/Explore/img2_blog.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-items col l-5 m-5 c-6 hide-on-moblile-tablet">
+                                <div class="blog-content">
+                                    <div class="blog-info">
+                                        <div class="blog-author">Author</div>
+                                        <div class="blog-header">CONTENT 6</div>
+                                        <a href="" class="blog-btn-link">
+                                            <button class="blog-btn">Read now</button>
+                                        </a>
+                                    </div>
+                                    <div class="blog-img">
+                                        <img src="./asset/img/Explore/img1_blog.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="blog-explore_page row">
 
-                    <div class="blog-items col l-5">
-                        <div class="blog-content">
-                            <div class="blog-info">
-                                <div class="blog-author">Author</div>
-                                <div class="blog-header">CONTENT 1</div>
-                                <button class="blog-btn">Read now</button>
-                            </div>
-                            <div class="blog-img">
-                                <img src="./asset/img/Explore/img1_blog.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="blog-items col l-3">
-                        <div class="blog-content">
-                            <div class="blog-info">
-                                <div class="blog-author">Author</div>
-                                <div class="blog-header">CONTENT 2</div>
-                                <button class="blog-btn">Read now</button>
-                            </div>
-                            <div class="blog-img">
-                                <img src="./asset/img/Explore/img2_blog.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="blog-items col l-3">
-                        <div class="blog-content">
-                            <div class="blog-info">
-                                <div class="blog-author">Author</div>
-                                <div class="blog-header">CONTENT 3</div>
-                                <button class="blog-btn">Read now</button>
-                            </div>
-                            <div class="blog-img">
-                                <img src="./asset/img/Explore/img3_blog.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="blog-items col l-3">
-                        <div class="blog-content">
-                            <div class="blog-info">
-                                <div class="blog-author">Author</div>
-                                <div class="blog-header">CONTENT 4</div>
-                                <button class="blog-btn">Read now</button>
-                            </div>
-                            <div class="blog-img">
-                                <img src="./asset/img/Explore/img4_blog.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="blog-items col l-3">
-                        <div class="blog-content">
-                            <div class="blog-info">
-                                <div class="blog-author">Author</div>
-                                <div class="blog-header">CONTENT 5</div>
-                                <button class="blog-btn">Read now</button>
-                            </div>
-                            <div class="blog-img">
-                                <img src="./asset/img/Explore/img2_blog.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="blog-items col l-5">
-                        <div class="blog-content">
-                            <div class="blog-info">
-                                <div class="blog-author">Author</div>
-                                <div class="blog-header">CONTENT 6</div>
-                                <button class="blog-btn">Read now</button>
-                            </div>
-                            <div class="blog-img">
-                                <img src="./asset/img/Explore/img1_blog.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
 
             </div>
         </div>
 
         <!-- Download PAGE -->
-        <div style="background-image: url(./asset/img/Explore/img_Download.png);" class="download_page-bg grid">
-            <div class="download_page grid wide row">
+        <div class="download_page-bg grid hide-on-moblile">
 
-                <div class="download_page-container col l-5 ">
-                    <h1 class="download_page-title">Download This App</h1>
-                    <div class="download_page-description">
-                        <img src="./asset/img/Explore/img_app.png" alt="" class="download_page-img">
-                        <p class="download_page-content">Pellentesque habitant morbi tristique senectus et
-                            netuset malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-                        </p>
-                    </div>
-                    <div class="download_page-download">
-                        <div class="download_page-app">
-                            <img src="./asset/img/Explore/google_play.png" alt="" class="download_page-imgChplay">
-                            <img src="./asset/img/Explore/app_store.png" alt="" class="download_page-imgAppstore">
+            <img src="./asset/img/Explore/img_Download.png" alt="" class="download_page-bg-img">
+
+            <div class="download_page ">
+                <div class="grid wide">
+
+                    <div class="row">
+
+                        <div class="download_page-container col l-5 m-12 c-10">
+                            <h1 class="download_page-title">Download This App</h1>
+                            <div class="download_page-description">
+                                <img src="./asset/img/Explore/img_app.png" alt="" class="download_page-img">
+                                <p class="download_page-content">You can download this application to your phone to
+                                    conveniently monitor and observe your children.
+                                </p>
+                            </div>
+                            <div class="download_page-download">
+                                <div class="download_page-app">
+                                    <img src="./asset/img/Explore/google_play.png" alt=""
+                                        class="download_page-imgChplay">
+                                    <img src="./asset/img/Explore/app_store.png" alt=""
+                                        class="download_page-imgAppstore">
+                                </div>
+                                <img src="./asset/img/Explore/qr_code.png" alt="" class="download_page-imgQr">
+                            </div>
                         </div>
-                        <img src="./asset/img/Explore/qr_code.png" alt="" class="download_page-imgQr">
+
                     </div>
+
                 </div>
+
 
             </div>
         </div>
@@ -306,32 +355,30 @@
                 <div class="course_page-content grid">
                     <div class="course_page-learning row">
 
-                        <div class="course-item col l-3">
+                        <div class="course-item col l-3 m-6 c-12">
                             <a href="./course.html" class="course-item-link">
-                                <img src="./asset/img/Course/Course_img/emotional-control_Course.png" alt=""
+                                <img src="./asset/img/Course/Course_img/Miracles-come_Course.png" alt=""
                                     class="course-item-img">
                             </a>
                         </div>
 
-                        <div class="course-item col l-3">
+                        <div class="course-item col l-3 m-6 c-12">
                             <a href="./course.html" class="course-item-link">
-                                <img src="/asset/img/Course/Course_img/emotional-control_Course.png" alt=""
+                                <img src="/asset/img/Course/Course_img/5Tips-help_Course.png" alt=""
                                     class="course-item-img">
                             </a>
                         </div>
 
 
-                        <div class="course-item col l-3">
+                        <div class="course-item col l-3 m-6 c-12">
                             <a href="./course.html" class="course-item-link">
-                                <img src="/asset/img/Course/Course_img/emotional-control_Course.png" alt=""
-                                    class="course-item-img">
+                                <img src="/asset/img/Course/Course_img/img3_Course.png" alt="" class="course-item-img">
                             </a>
                         </div>
 
-                        <div class="course-item col l-3">
+                        <div class="course-item col l-3 m-6 c-12">
                             <a href="./course.html" class="course-item-link">
-                                <img src="/asset/img/Course/Course_img/emotional-control_Course.png" alt=""
-                                    class="course-item-img">
+                                <img src="/asset/img/Course/Course_img/img4_Course.png" alt="" class="course-item-img">
                             </a>
                         </div>
 
@@ -348,14 +395,17 @@
         <div id="about_page" class="grid">
 
             <!-- About Us -->
-            <div style="background-image: url(./asset/img/About/aboutUs-bg_img.png);" class="aboutUS-page-bg">
+            <div class="aboutUS-container">
+
+                <img src="./asset/img/About/aboutUs-bg_img.png" alt="" class="aboutUS-page-bg">
                 <div class="aboutUS-page">
                     <h1 class="aboutUS-page-title">
                         ABOUT US
                     </h1>
-                    <p class="aboutUS-page-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus
-                        malesuada libero, sit amet commodo magna eros quis urna.
+                    <p class="aboutUS-page-description">The Donald Project supports autistic children and their families
+                        through services like online courses, life skills training, and social communication classes. It
+                        aims to help children reach their potential and integrate into society while empowering families
+                        with the tools and knowledge needed for effective support.
                     </p>
                 </div>
             </div>
@@ -367,31 +417,31 @@
 
                     <div class="ourPurpose-page-container row">
 
-                        <div class="ourPurpose-page-content col l-6">
+                        <div class="ourPurpose-page-content col l-6 m-12 c-12">
                             <h1 class="ourPurpose-page-title">
                                 Our Purpose
                             </h1>
-                            <p class="ourPurpose-page-description">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                elit.
-                                Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus
-                                lectus
-                                malesuada libero, sit amet commodo magna eros quis urna.
+                            <p class="ourPurpose-page-description">The purpose of The Donald Project is to provide
+                                comprehensive support for autistic children and their families through a range of
+                                specialized services. These services are designed to help autistic children reach their
+                                full potential, integrate into society, and ensure a supportive environment for their
+                                growth and development.
                             </p>
                         </div>
 
-                        <div class="ourPurpose-page-img  col l-6">
+                        <div class="ourPurpose-page-img  col l-6 m-12 c-12">
 
                             <div class="row">
-                                <div class="ourPurpose-page-item col l-6">
-                                    <img src="./asset/img/imgNotFound.jpg" alt="">
+                                <div class="ourPurpose-page-item col l-6 m-12 c-12">
+                                    <img src="./asset/img/About/purpose_img1.jpg" alt="">
                                 </div>
 
-                                <div class="ourPurpose-page-item col l-6">
-                                    <img src="./asset/img/imgNotFound.jpg" alt="">
+                                <div class="ourPurpose-page-item col l-6 m-12 c-12">
+                                    <img src="./asset/img/About/purpose_img2.jpg" alt="">
                                 </div>
 
-                                <div class="ourPurpose-page-item col l-12">
-                                    <img src="./asset/img/imgNotFound.jpg" alt="">
+                                <div class="ourPurpose-page-item col l-12 m-12 c-12">
+                                    <img src="./asset/img/About/purpose_img3.jpg" alt="">
                                 </div>
                             </div>
 
@@ -408,25 +458,25 @@
                     <div class="contactUs-page-container">
                         <div class="row">
 
-                            <h1 class="contactUs-page-title col l-12">
+                            <h1 class="contactUs-page-title col l-12 m-12 c-12">
                                 <span style="color: #8BB19C;">Contact</span> Us
                             </h1>
 
                             <form action="" method="post" class="contactUs-page-form row">
-                                <div class="contactUs-page-items col l-6">
+                                <div class="contactUs-page-items col l-6 m-12 c-12">
                                     <input type="text" name="user" placeholder="Name:" class="contactUs-page-input">
                                 </div>
 
-                                <div class="contactUs-page-items col l-6">
+                                <div class="contactUs-page-items col l-6 m-12 c-12">
                                     <input type="email" name="mail" placeholder="Email:" class="contactUs-page-input">
                                 </div>
 
-                                <div class="contactUs-page-items col l-12">
+                                <div class="contactUs-page-items col l-12 m-12 c-12">
                                     <input type="text" name="message" placeholder="Massage:"
                                         class="contactUs-page-input">
                                 </div>
 
-                                <div class="contactUs-page-submit col l-2">
+                                <div class="contactUs-page-submit col l-2 m-12 c-12">
                                     <input type="submit" name="send" value="SEND">
                                 </div>
                             </form>
@@ -440,76 +490,127 @@
             <div class="ourMember-page grid wide">
                 <div class="ourMember-page-container">
                     <div class="row">
-                        <div class="ourMember-page-title col l-12">
+                        <div class="ourMember-page-title col l-12 m-12 c-12">
                             <span style="color: #8BB19C;">Meet</span> Our Members
                         </div>
-                        <p class="ourMember-page-description col l-12">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.
+                        <p class="ourMember-page-description col l-12 m-12 c-12">
+                            Below are the members implementing the project.
                         </p>
-                        <div class="ourMember-page-member col l-12">
+                        <div class="ourMember-page-member col l-12 m-12 c-12">
 
                             <div class="row">
 
-                                <div class="ourMember-page-item col l-3">
-                                    <img src="./asset/img/About/HuuKhoa.jpg" alt="" class="ourMember-page-imgMember">
-                                    <div class="ourMember-page-name">Huu Khoa</div>
-                                    <div class="ourMember-page-contact">
+                                <div class="ourMember-page-item col l-3 m-6 c-6">
+                                    <div class="row">
+                                        <div class="col l-12 c-5">
+                                            <img src="./asset/img/About/HuuKhoa.jpg" alt=""
+                                                class="ourMember-page-imgMember">
+                                        </div>
 
-                                        <a href="" class="ourMember-page-link">
-                                            <i class="ourMember-page-Facebook fa-brands fa-facebook"></i>
-                                        </a>
+                                        <div class="ourMember-page-info col l-12 c-7">
 
-                                        <a href="" class="ourMember-page-link">
-                                            <i class="ourMember-page-mail fa-solid fa-envelope"></i>
-                                        </a>
+                                            <div class="row">
+                                                <div class="ourMember-page-name col l-12 c-12">Huu Khoa</div>
+                                                <div class="ourMember-page-contact col l-12 c-12">
 
-                                    </div>
-                                </div>
+                                                    <a href="" class="ourMember-page-link">
+                                                        <i class="ourMember-page-Facebook fa-brands fa-facebook"></i>
+                                                    </a>
 
-                                <div class="ourMember-page-item col l-3">
-                                    <img src="" alt="" class="ourMember-page-imgMember">
-                                    <div class="ourMember-page-name">Huu Khoa</div>
-                                    <div class="ourMember-page-contact">
+                                                    <a href="mailto:" class="ourMember-page-link">
+                                                        <i class="ourMember-page-mail fa-solid fa-envelope"></i>
+                                                    </a>
 
-                                        <a href="" class="ourMember-page-link">
-                                            <i class="ourMember-page-Facebook fa-brands fa-facebook"></i>
-                                        </a>
+                                                </div>
+                                            </div>
 
-                                        <a href="" class="ourMember-page-link">
-                                            <i class="ourMember-page-mail fa-solid fa-envelope"></i>
-                                        </a>
+                                        </div>
 
                                     </div>
                                 </div>
 
-                                <div class="ourMember-page-item col l-3">
-                                    <img src="" alt="" class="ourMember-page-imgMember">
-                                    <div class="ourMember-page-name">Huu Khoa</div>
-                                    <div class="ourMember-page-contact">
+                                <div class="ourMember-page-item col l-3 m-6 c-6">
+                                    <div class="row">
+                                        <div class="col l-12 c-5">
+                                            <img src="./asset/img/About/LamPhat.jpg" alt=""
+                                                class="ourMember-page-imgMember">
+                                        </div>
 
-                                        <a href="" class="ourMember-page-link">
-                                            <i class="ourMember-page-Facebook fa-brands fa-facebook"></i>
-                                        </a>
+                                        <div class="ourMember-page-info col l-12 c-7">
 
-                                        <a href="" class="ourMember-page-link">
-                                            <i class="ourMember-page-mail fa-solid fa-envelope"></i>
-                                        </a>
+                                            <div class="row">
+                                                <div class="ourMember-page-name col l-12 c-12">Lam Phat</div>
+                                                <div class="ourMember-page-contact col l-12 c-12">
+
+                                                    <a href="" class="ourMember-page-link">
+                                                        <i class="ourMember-page-Facebook fa-brands fa-facebook"></i>
+                                                    </a>
+
+                                                    <a href="mailto:" class="ourMember-page-link">
+                                                        <i class="ourMember-page-mail fa-solid fa-envelope"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
 
                                     </div>
                                 </div>
 
-                                <div class="ourMember-page-item col l-3">
-                                    <img src="" alt="" class="ourMember-page-imgMember">
-                                    <div class="ourMember-page-name">Huu Khoa</div>
-                                    <div class="ourMember-page-contact">
+                                <div class="ourMember-page-item col l-3 m-6 c-6">
+                                    <div class="row">
+                                        <div class="col l-12 c-5">
+                                            <img src="./asset/img/About/DaiNhan.jpg" alt=""
+                                                class="ourMember-page-imgMember">
+                                        </div>
 
-                                        <a href="" class="ourMember-page-link">
-                                            <i class="ourMember-page-Facebook fa-brands fa-facebook"></i>
-                                        </a>
+                                        <div class="ourMember-page-info col l-12 c-7">
 
-                                        <a href="" class="ourMember-page-link">
-                                            <i class="ourMember-page-mail fa-solid fa-envelope"></i>
-                                        </a>
+                                            <div class="row">
+                                                <div class="ourMember-page-name col l-12 c-12">Dai Nhan</div>
+                                                <div class="ourMember-page-contact col l-12 c-12">
+
+                                                    <a href="" class="ourMember-page-link">
+                                                        <i class="ourMember-page-Facebook fa-brands fa-facebook"></i>
+                                                    </a>
+
+                                                    <a href="mailto:" class="ourMember-page-link">
+                                                        <i class="ourMember-page-mail fa-solid fa-envelope"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="ourMember-page-item col l-3 m-6 c-6">
+                                    <div class="row">
+                                        <div class="col l-12 c-5">
+                                            <img src="./asset/img/About/" alt="" class="ourMember-page-imgMember">
+                                        </div>
+
+                                        <div class="ourMember-page-info col l-12 c-7">
+
+                                            <div class="row">
+                                                <div class="ourMember-page-name col l-12 c-12">Bao Nguyen</div>
+                                                <div class="ourMember-page-contact col l-12 c-12">
+
+                                                    <a href="" class="ourMember-page-link">
+                                                        <i class="ourMember-page-Facebook fa-brands fa-facebook"></i>
+                                                    </a>
+
+                                                    <a href="mailto:" class="ourMember-page-link">
+                                                        <i class="ourMember-page-mail fa-solid fa-envelope"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
 
                                     </div>
                                 </div>
@@ -517,7 +618,7 @@
                             </div>
 
                         </div>
-                        <button class="ourMember-page-btn">More</button>
+                        <!-- <button class="ourMember-page-btn">More</button> -->
                     </div>
                 </div>
             </div>
@@ -532,47 +633,45 @@
             <div class="grid wide">
                 <div class="footer-container row">
 
-                    <div class="footer-item col l-6">
+                    <div class="footer-item col l-6 m-12 c-12">
                         <img src="./asset/img/Home/logo.png" alt="" class="footer_logo">
-                        <p class="footer-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
-                            porttitor congue massa.
+                        <p class="footer-content">If you want advice or detailed information about our project, you can
+                            contact one of our social networks below.
                         </p>
                         <div class="footer-icon row">
 
-                            <a href="" class="footer-link col l-1">
+                            <a href="" class="footer-link col l-1 c-2">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
-                            <a href="" class="footer-link col l-1">
+                            <a href="" class="footer-link col l-1 c-2">
                                 <i class="fa-brands fa-square-instagram"></i>
                             </a>
-                            <a href="" class="footer-link col l-1">
+                            <a href="https://github.com/Aohkne/Donald" class="footer-link col l-1 c-2">
                                 <i class="fa-brands fa-github"></i>
                             </a>
 
                         </div>
                     </div>
 
-                    <div class="footer-item col l-3">
-                        <div class="row">
-                            <h1 class="footer-title col l-12">Navigation</h1>
-                            <a href="#home_page-bg" class="footer-item-link col l-12">Home</a>
-                            <a href="#explore_page-bg" class="footer-item-link col l-12">Explore</a>
-                            <a href="#course_page-bg" class="footer-item-link col l-12">Course</a>
-                            <a href="#about_page" class="footer-item-link col l-12">About</a>
-                        </div>
+                    <div class="footer-item col l-3 m-6 c-6">
+                        <h1 class="footer-title">Navigation</h1>
+                        <a href="#home_page-bg" class="footer-item-link">Home</a>
+                        <a href="#explore_page-bg" class="footer-item-link">Explore</a>
+                        <a href="#course_page-bg" class="footer-item-link">Course</a>
+                        <a href="#about_page" class="footer-item-link">About</a>
                     </div>
 
-                    <div class="footer-item col l-3">
+                    <div class="footer-item col l-3 m-6 c-6">
                         <h1 class="footer-title">Contact</h1>
-                        <div href="" class="footer-item-link">
+                        <div href="" class="footer-item-contact">
                             <i class="fa-solid fa-location-dot"></i>
                             Ly Tu Trong, TP.HCM
                         </div>
-                        <div href="" class="footer-item-link">
+                        <div href="" class="footer-item-contact">
                             <i class="fa-solid fa-phone"></i>
                             098171618
                         </div>
-                        <div href="" class="footer-item-link">
+                        <div href="" class="footer-item-contact">
                             <i class="fa-solid fa-envelope"></i>
                             satthumientay@gmail.com
                         </div>
