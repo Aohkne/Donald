@@ -311,6 +311,7 @@
 .bot-img {
     height: 50px;
     animation: 1.5s infinite bot-animation;
+    -webkit-user-drag: none;
 }
 
 @keyframes bot-animation {
