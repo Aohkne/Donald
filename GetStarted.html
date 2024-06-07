@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Nhập & Đăng Ký</title>
+
+    <link rel="stylesheet" href="./asset/css/GetStarted.css">
+    <script src="./js/GetStarted.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container" id="login-form">
+        <div class="form-title">Đăng Nhập</div>
+        <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+        </div>
+        <div class="form-group">
+            <label for="login-password">Mật Khẩu</label>
+            <input type="password" id="login-password" required>
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="login()">Đăng Nhập</button>
+        </div>
+        <div class="switch-form">
+            Chưa có tài khoản? <a href="#" onclick="showRegisterForm()">Đăng Ký</a>
+        </div>
+        <div class="error-message" id="login-error"></div>
+        <div class="success-message" id="login-success"></div>
+    </div>
+
+    <div class="container" id="register-form" style="display: none;">
+        <div class="form-title">Đăng Ký</div>
+        <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" required>
+        </div>
+        <div class="form-group">
+            <label for="register-password">Mật Khẩu</label>
+            <input type="password" id="register-password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Xác Nhận Mật Khẩu</label>
+            <input type="password" id="confirm-password" required>
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="register()">Đăng Ký</button>
+        </div>
+        <div class="switch-form">
+            Đã có tài khoản? <a href="#" onclick="showLoginForm()">Đăng Nhập</a>
+        </div>
+        <div class="error-message" id="register-error"></div>
+        <div class="alternative-register">
+            <button class="google-register" onclick="registerWithGoogle()">Đăng Ký bằng Google</button>
+            <button class="phone-register" onclick="registerWithPhone()">Đăng Ký bằng Số Điện Thoại</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
