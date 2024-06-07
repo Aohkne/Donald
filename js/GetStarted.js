@@ -1,16 +1,17 @@
+// setup for Login Form
 function showLoginForm() {
   document.getElementById("login-form").style.display = "block";
   document.getElementById("register-form").style.display = "none";
   document.getElementById("login-error").textContent = "";
   document.getElementById("login-success").textContent = "";
 }
-
+// setup for Register Form
 function showRegisterForm() {
   document.getElementById("login-form").style.display = "none";
   document.getElementById("register-form").style.display = "block";
   document.getElementById("register-error").textContent = "";
 }
-
+// Process the login form then turn to the index.html when user entered correctly
 function login() {
   const email = document.getElementById("login-email").value;
   const password = document.getElementById("login-password").value;
@@ -23,14 +24,18 @@ function login() {
   } else {
     errorMessage.textContent = "";
     successMessage.textContent = "Đăng Nhập thành công!";
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 1000);
   }
 }
-
+// Process the register form then turn to the index.html when user entered correctly
 function register() {
   const email = document.getElementById("register-email").value;
   const password = document.getElementById("register-password").value;
   const confirmPassword = document.getElementById("confirm-password").value;
   const errorMessage = document.getElementById("register-error");
+  const successMessage = document.getElementById("register-success");
 
   if (email === "" || password === "" || confirmPassword === "") {
     errorMessage.textContent = "Vui lòng nhập đầy đủ thông tin!";
@@ -38,14 +43,14 @@ function register() {
     errorMessage.textContent = "Mật khẩu xác nhận không khớp!";
   } else {
     errorMessage.textContent = "";
-    alert("Đăng Ký thành công!");
+    successMessage.textContent = "Đăng Ký thành công!";
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 1000);
   }
 }
+// Comming soon =))))
+function registerWithGoogle() {}
 
-function registerWithGoogle() {
-  alert("Chức năng Đăng Ký bằng Google chưa được hỗ trợ.");
-}
-
-function registerWithPhone() {
-  alert("Chức năng Đăng Ký bằng Số Điện Thoại chưa được hỗ trợ.");
-}
+// Comming soon =))))
+function registerWithPhone() {}

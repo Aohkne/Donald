@@ -12,7 +12,8 @@
 
 <body>
 
-    <div class="container" id="login-form">
+    <!-- Login Form -->
+    <form class="container" id="login-form" method="post">
         <div class="form-title">Đăng Nhập</div>
         <div class="form-group">
             <label for="login-email">Email</label>
@@ -28,11 +29,14 @@
         <div class="switch-form">
             Chưa có tài khoản? <a href="#" onclick="showRegisterForm()">Đăng Ký</a>
         </div>
+        <!-- Show the error when user do not enter correctly or using wrong credentials -->
         <div class="error-message" id="login-error"></div>
+        <!-- Show that user has entered correctly -->
         <div class="success-message" id="login-success"></div>
-    </div>
+    </form>
 
-    <div class="container" id="register-form" style="display: none;">
+    <!-- Register Form, display none when in the login form -->
+    <form class="container" id="register-form" style="display: none;" method="post">
         <div class="form-title">Đăng Ký</div>
         <div class="form-group">
             <label for="register-email">Email</label>
@@ -52,14 +56,17 @@
         <div class="switch-form">
             Đã có tài khoản? <a href="#" onclick="showLoginForm()">Đăng Nhập</a>
         </div>
+        <!-- Show the error when user do not enter correctly or do not enter identical password-->
         <div class="error-message" id="register-error"></div>
+        <!-- Show that user has entered correctly -->
+        <div class="success-message" id="register-success"></div>
+
+        <!-- Choose the alternative register way -->
         <div class="alternative-register">
             <button class="google-register" onclick="registerWithGoogle()">Đăng Ký bằng Google</button>
             <button class="phone-register" onclick="registerWithPhone()">Đăng Ký bằng Số Điện Thoại</button>
         </div>
-    </div>
-
-
+    </form>
 
 </body>
 
