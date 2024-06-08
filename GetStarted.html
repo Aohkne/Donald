@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="vi">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Đăng Nhập & Đăng Ký</title>
 
-    <link rel="stylesheet" href="./asset/css/GetStarted.css">
+    <link rel="stylesheet" href="./asset/css/GetStarted.css" />
     <script src="./js/GetStarted.js" defer></script>
-</head>
+  </head>
 
-<body>
-
-    <!-- Login Form -->
-    <form class="container" id="login-form" method="post">
+  <body>
+    <div id="Login-Part">
+      <!-- Login Form -->
+      <form class="container" id="login-form" method="post">
         <div class="form-title">Đăng Nhập</div>
         <div class="form-group">
-            <label for="login-email">Email</label>
-            <input type="email" id="login-email" required>
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" required />
         </div>
         <div class="form-group">
-            <label for="login-password">Mật Khẩu</label>
-            <input type="password" id="login-password" required>
+          <label for="login-password">Mật Khẩu</label>
+          <input type="password" id="login-password" required />
         </div>
         <div class="form-group">
-            <button type="button" onclick="login()">Đăng Nhập</button>
+          <button type="button" onclick="login()">Đăng Nhập</button>
         </div>
         <div class="switch-form">
-            Chưa có tài khoản? <a href="#" onclick="showRegisterForm()">Đăng Ký</a>
+          Chưa có tài khoản?
+          <a href="#" onclick="showRegisterForm()">Đăng Ký</a>
         </div>
         <!-- Show the error when user do not enter correctly or using wrong credentials -->
         <div class="error-message" id="login-error"></div>
         <!-- Show that user has entered correctly -->
         <div class="success-message" id="login-success"></div>
-    </form>
+      </form>
 
-    <!-- Register Form, display none when in the login form -->
-    <form class="container" id="register-form" style="display: none;" method="post">
+      <!-- Register Form, display none when in the login form -->
+      <form
+        class="container"
+        id="register-form"
+        style="display: none"
+        method="post"
+      >
         <div class="form-title">Đăng Ký</div>
         <div class="form-group">
-            <label for="register-email">Email</label>
-            <input type="email" id="register-email" required>
+          <label for="register-email">Email</label>
+          <input type="email" id="register-email" required />
         </div>
         <div class="form-group">
-            <label for="register-password">Mật Khẩu</label>
-            <input type="password" id="register-password" required>
+          <label for="register-password">Mật Khẩu</label>
+          <input type="password" id="register-password" required />
         </div>
         <div class="form-group">
-            <label for="confirm-password">Xác Nhận Mật Khẩu</label>
-            <input type="password" id="confirm-password" required>
+          <label for="confirm-password">Xác Nhận Mật Khẩu</label>
+          <input type="password" id="confirm-password" required />
         </div>
         <div class="form-group">
-            <button type="button" onclick="register()">Đăng Ký</button>
+          <button type="button" onclick="register()">Đăng Ký</button>
         </div>
         <div class="switch-form">
-            Đã có tài khoản? <a href="#" onclick="showLoginForm()">Đăng Nhập</a>
+          Đã có tài khoản? <a href="#" onclick="showLoginForm()">Đăng Nhập</a>
         </div>
         <!-- Show the error when user do not enter correctly or do not enter identical password-->
         <div class="error-message" id="register-error"></div>
@@ -63,11 +68,14 @@
 
         <!-- Choose the alternative register way -->
         <div class="alternative-register">
-            <button class="google-register" onclick="registerWithGoogle()">Đăng Ký bằng Google</button>
-            <button class="phone-register" onclick="registerWithPhone()">Đăng Ký bằng Số Điện Thoại</button>
+          <button class="google-register" onclick="registerWithGoogle()">
+            Đăng Ký bằng Google
+          </button>
+          <button class="phone-register" onclick="registerWithPhone()">
+            Đăng Ký bằng Số Điện Thoại
+          </button>
         </div>
-    </form>
-
-</body>
-
+      </form>
+    </div>
+  </body>
 </html>

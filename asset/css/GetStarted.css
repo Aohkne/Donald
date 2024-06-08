@@ -6,6 +6,21 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url("../img/Login/Login_Background.jpg");
+    background-size: 50%;
+}
+
+#Login-Part {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: linear-gradient(to bottom right,
+            #ddcfd0,
+            #caa0b8,
+            #b7c846);
+    width: 30%;
 }
 
 .container {
@@ -14,6 +29,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+
 }
 
 .form-title {
