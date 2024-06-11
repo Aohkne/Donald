@@ -15,6 +15,7 @@
     width: 100%;
     top: 0;
     z-index: 2;
+    animation: fade-down 0.8s;
 }
 
 .nav {}
@@ -68,6 +69,7 @@
 }
 
 .nav-users__link {
+    user-select: none;
     width: 45%;
     transform: translateY(45%);
     border-radius: 20px;
@@ -80,13 +82,17 @@
     font-size: 1.8rem;
     font-weight: 600;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 
 .nav-users__link:hover {
     opacity: 0.8;
-    background-color: var(--text-color);
-    color: var(--white-color);
+}
+
+.nav-users__link:active {
+    transform: translateY(25px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .nav-iconMenu {
@@ -122,7 +128,7 @@
 
     top: 50%;
     right: 0px;
-
+    animation: fade-up 0.8s;
 }
 
 .home_page-title {
@@ -137,7 +143,7 @@
 }
 
 .home_page-btn {
-
+    user-select: none;
     padding: 10px 25px;
     border: none;
     margin-left: 10px;
@@ -148,13 +154,16 @@
     background-color: #F3F2E0;
     cursor: pointer;
     box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 1);
+    transition: all 0.2s ease;
 }
 
 .home_page-btn:hover {
     opacity: 0.8;
+}
 
-    background-color: var(--text-color);
-    color: var(--white-color);
+.home_page-btn:active {
+    transform: translateY(5px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 /* explore PAGE */
@@ -180,6 +189,9 @@
 .title-explore_page {
     padding-top: 10%;
     font-size: 4rem;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 
@@ -188,6 +200,9 @@
     font-size: 1.8rem;
     line-height: 1.8rem;
     text-align: left;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .blog-explore_page {
@@ -204,6 +219,9 @@
     padding: 15px 0;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.8);
     margin: 10px;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .blog-items:first-child img,
@@ -314,37 +332,6 @@
     -webkit-user-drag: none;
 }
 
-@keyframes bot-animation {
-    0% {
-        transform: rotate(0);
-    }
-
-    10% {
-        transform: rotate(25deg);
-    }
-
-    20% {
-        transform: rotate(-25deg);
-    }
-
-    30% {
-        transform: rotate(25deg);
-    }
-
-    40% {
-        transform: rotate(-25deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
-
-
 /* download PAGE */
 
 .download_page-bg {
@@ -368,6 +355,7 @@
 .download_page-container {
     margin: 15% 0 0 5%;
     color: var(--text-color);
+
 }
 
 
@@ -375,11 +363,17 @@
     text-align: center;
     font-size: 4.5rem;
     font-weight: 600;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .download_page-description {
     display: flex;
     margin: 30px 0 50px;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .download_page-img {
@@ -400,6 +394,9 @@
     display: flex;
     /* padding: 0 20px; */
     justify-content: left;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .download_page-app {}
@@ -444,6 +441,9 @@
     border-radius: 30px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 1);
     overflow: hidden;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .slider-list {
@@ -559,13 +559,20 @@
     margin: 30px 0;
     font-weight: 600;
     font-size: 4rem;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .course_page-learning {
     display: flex;
 }
 
-.course-item {}
+.course-item {
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 .course-item-link {}
 
@@ -575,7 +582,6 @@
     width: 100%;
     border-radius: 15px;
     box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 1);
-
 }
 
 .course-item-img:hover {
@@ -612,6 +618,9 @@
 .aboutUS-page-title {
     font-size: 6rem;
     font-weight: 600px;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .aboutUS-page-description {
@@ -619,6 +628,9 @@
     margin: 30px 0;
     line-height: 2rem;
     text-align: center;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 /* Our purpose */
@@ -637,6 +649,9 @@
     text-align: center;
     font-size: 4rem;
     font-weight: 600px;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .ourPurpose-page-description {
@@ -644,12 +659,18 @@
     margin: 20px 0;
     line-height: 2rem;
     text-align: justify;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .ourPurpose-page-item img {
     background-size: cover;
     width: 100%;
     border-radius: 5px;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 
@@ -665,6 +686,9 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .contactUs-page-title {
@@ -691,6 +715,7 @@
     outline: none;
 }
 
+
 /* .contactUs-page-items:last-child.contactUs-page-input {
     border-radius: 10px;
     height: 100px;
@@ -700,6 +725,7 @@
 }
 
 .contactUs-page-submit input {
+    user-select: none;
     width: 100%;
     margin-top: 10px;
     padding: 10px 30px;
@@ -709,12 +735,15 @@
     border: none;
     border-radius: 20px;
     box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .contactUs-page-submit input:hover {
-    background-color: var(--green-color);
+    background-color: var(--text-color);
     color: var(--white-color);
-    cursor: pointer;
+    transform: translateY(5px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 
@@ -731,11 +760,17 @@
     font-size: 4rem;
     font-weight: 600;
     margin: 10px 0;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .ourMember-page-description {
     font-size: 2rem;
     margin: 20px 0;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .ourMember-page-member {}
@@ -745,6 +780,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+
 }
 
 
@@ -756,12 +792,18 @@
     object-fit: fill;
     background-color: var(--primary-color);
     border: 3px solid var(--green-color);
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .ourMember-page-name {
     font-weight: 600;
     font-size: 2.5rem;
     margin: 10px 0;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 
@@ -774,6 +816,9 @@
 
 .ourMember-page-link i {
     margin: 0 5px;
+    animation: appearScroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .ourMember-page-link:hover {
@@ -854,4 +899,80 @@
     font-size: 1.6rem;
     line-height: 1.8rem;
     padding: 5px 0;
+}
+
+
+/* Animation */
+
+
+@keyframes appearScroll {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+        /* scale: 0.5; */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        /* scale: 1; */
+    }
+}
+
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/* bot */
+
+@keyframes bot-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(25deg);
+    }
+
+    20% {
+        transform: rotate(-25deg);
+    }
+
+    30% {
+        transform: rotate(25deg);
+    }
+
+    40% {
+        transform: rotate(-25deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
 }
