@@ -56,3 +56,65 @@ nav.onclick = function () {
 //     // child.onclick()
 
 // });
+
+
+// Check face
+let video = document.getElementById('videoCheckFace');
+let botNotification = document.querySelector('.botNotification');
+
+//gọi api check khuôn mặt
+const loadFaceAPI = async () => {
+    await faceapi.nets.faceLandmark68Net.loadFromUri('./js/For_Check-Face/model');
+    await faceapi.nets.faceRecognitionNet.loadFromUri('./js/For_Check-Face/model');
+    await faceapi.nets.tinyFaceDetector.loadFromUri('./js/For_Check-Face/model');
+    // các thông tin dự đoán về biểu cảm trên web cam
+    await faceapi.nets.faceExpressionNet.loadFromUri('./js/For_Check-Face/model');
+}
+
+// Function lấy luồng để mở camera
+function getCameraStrem() {
+    //nếu trình duyệt có hỗ trợ thì gọi ra để sử dụng
+    if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ video: {} })
+            .then(stream => {
+                video.srcObject = stream;
+            })
+    }
+}
+
+
+video.addEventListener('playing', () => {
+    // const canvas = faceapi.createCanvasFromMedia(video);
+    // document.body.append(canvas);
+
+    setInterval(async () => {
+        const detectFace = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions());
+        var iframe = document.getElementsByTagName("iframe")[0].contentWindow;
+        // console.log(detectFace);
+        if (detectFace.length == 0) {
+            // Show notification when dont detect face
+            // console.log('Cảnh báo khuông mặt đã rời khỏi khung hình');
+            botNotification.style.display = 'block';
+            botNotification.innerHTML = 'Warning: face has left the screen';
+
+            //Pause video when dont detect face
+            iframe.postMessage(
+                '{"event":"command","func":"' + 'pauseVideo' + '","args":""}',
+                "*"
+            );
+
+        } else {
+            botNotification.style.display = 'none';
+
+            //Play video when dont detect face
+            iframe.postMessage(
+                '{"event":"command","func":"' + 'playVideo' + '","args":""}',
+                "*"
+            );
+        }
+    }, 3000)
+})
+
+loadFaceAPI().then(getCameraStrem);
+
+

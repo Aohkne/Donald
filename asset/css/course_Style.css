@@ -148,9 +148,8 @@ html {
 }
 
 /* bot */
-
-
 .bot_link {
+    text-decoration: none;
     width: 100%;
     padding: 0 20px;
     position: fixed;
@@ -159,6 +158,21 @@ html {
     z-index: 1;
     justify-content: right;
 }
+
+#videoCheckFace {
+    display: none;
+}
+
+.botNotification {
+    padding: 15px 10px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    color: var(--white-color);
+    background-color: red;
+}
+
+
+
 
 .bot-img {
     height: 50px;

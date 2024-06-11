@@ -15,6 +15,7 @@
 
 
     <!-- link javascript -->
+    <script src="js/For_Check-Face/face-api.min.js" defer></script>
     <script src="js/course_JS.js" defer></script>
 
 </head>
@@ -103,10 +104,12 @@
                 <!-- video container -->
                 <div class="video_container col l-12 c-12">
 
-                    <iframe src="https://www.youtube.com/embed/Ezv85LMFx2E" title="Những điều kỳ diệu đến!"
-                        frameborder="0"
+                    <!-- fix: link youtube-?rel=0&enablejsapi=1 -> thì mới dừng video đc  -->
+                    <iframe src="https://www.youtube.com/embed/Ezv85LMFx2E?rel=0&enablejsapi=1"
+                        title="Amazing Things Happen!" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
                     <div class="video-title">Miracles come!</div>
 
@@ -131,6 +134,8 @@
 
                 <!-- bot -->
                 <a href="" class="bot_link">
+                    <div class="botNotification"></div>
+                    <video src="" autoplay="true" id="videoCheckFace"></video>
                     <img src="./asset/img/Explore/img_bot.png" alt="" class="bot-img">
                 </a>
 
@@ -139,6 +144,8 @@
         </div>
 
     </div>
+
+
 </body>
 
 </html>
