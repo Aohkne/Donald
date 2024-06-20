@@ -1,0 +1,56 @@
+/* bot */
+.bot_link {
+    text-decoration: none;
+    width: 100%;
+    padding: 0 20px;
+    position: fixed;
+    top: 90%;
+    display: flex;
+    z-index: 10;
+    justify-content: right;
+}
+
+.botNotification {
+    display: none;
+    padding: 15px 10px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    color: var(--white-color);
+    background-color: red;
+}
+
+
+.bot-img {
+    height: 50px;
+    animation: 1.5s infinite bot-animation;
+}
+
+@keyframes bot-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(25deg);
+    }
+
+    20% {
+        transform: rotate(-25deg);
+    }
+
+    30% {
+        transform: rotate(25deg);
+    }
+
+    40% {
+        transform: rotate(-25deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
