@@ -6,7 +6,11 @@
     height: 100vh;
 }
 
-.app {}
+
+.app {
+    background-color: var(--primary-color);
+}
+
 
 /* header */
 .header__container {
@@ -312,25 +316,6 @@
     height: 150px;
 }
 
-/* bot */
-
-
-.bot_link {
-    width: 100%;
-    padding: 0 10px;
-    position: fixed;
-    top: 90%;
-    display: flex;
-
-    z-index: 10;
-    justify-content: right;
-}
-
-.bot-img {
-    height: 50px;
-    animation: 1.5s infinite bot-animation;
-    -webkit-user-drag: none;
-}
 
 /* download PAGE */
 
@@ -578,7 +563,7 @@
 
 .course-item-img {
     background-size: cover;
-    height: 160px;
+    height: 300px;
     width: 100%;
     border-radius: 15px;
     box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 1);
@@ -636,8 +621,10 @@
 /* Our purpose */
 .ourPurpose-page-bg {
     position: relative;
-    /* background-color: var(--primary-color); */
-    padding: 100px 0;
+    top: -15px;
+    background-color: var(--primary-color);
+    padding: 80px 0;
+
 }
 
 
@@ -671,6 +658,9 @@
     animation: appearScroll linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.8);
+
 }
 
 
@@ -678,7 +668,8 @@
 
 .contactUs-page-bg {
     padding: 50px 0;
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
+
 }
 
 .contactUs-page-container {
@@ -745,86 +736,6 @@
     transform: translateY(5px);
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
 }
-
-
-/* Our member */
-
-.ourMember-page-container {
-    margin-top: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.ourMember-page-title {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 10px 0;
-    animation: appearScroll linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-.ourMember-page-description {
-    font-size: 2rem;
-    margin: 20px 0;
-    animation: appearScroll linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-.ourMember-page-member {}
-
-.ourMember-page-item {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-
-
-.ourMember-page-imgMember {
-    display: flexbox;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: fill;
-    background-color: var(--primary-color);
-    border: 3px solid var(--green-color);
-    animation: appearScroll linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-.ourMember-page-name {
-    font-weight: 600;
-    font-size: 2.5rem;
-    margin: 10px 0;
-    animation: appearScroll linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-
-
-.ourMember-page-link {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1.4rem;
-}
-
-.ourMember-page-link i {
-    margin: 0 5px;
-    animation: appearScroll linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-.ourMember-page-link:hover {
-    opacity: 0.8;
-}
-
 
 
 /* Footer */
@@ -942,37 +853,5 @@
     100% {
         opacity: 1;
         transform: translateY(0px) scale(1);
-    }
-}
-
-/* bot */
-
-@keyframes bot-animation {
-    0% {
-        transform: rotate(0);
-    }
-
-    10% {
-        transform: rotate(25deg);
-    }
-
-    20% {
-        transform: rotate(-25deg);
-    }
-
-    30% {
-        transform: rotate(25deg);
-    }
-
-    40% {
-        transform: rotate(-25deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(0);
     }
 }
