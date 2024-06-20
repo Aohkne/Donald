@@ -5,9 +5,11 @@
     height: 100vh;
 }
 
+
 .app {
     background-color: var(--primary-color);
 }
+
 
 /* header */
 .header__container {
@@ -303,6 +305,7 @@
 .blog-img img {
     height: 150px;
 }
+
 
 
 /* download PAGE */
@@ -611,6 +614,7 @@
     top: -15px;
     background-color: var(--primary-color);
     padding: 80px 0;
+
 }
 
 
@@ -644,7 +648,9 @@
     animation: appearScroll linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+
     box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.8);
+
 }
 
 
@@ -653,6 +659,7 @@
 .contactUs-page-bg {
     padding: 50px 0;
     background-color: var(--white-color);
+
 }
 
 .contactUs-page-container {
