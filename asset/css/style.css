@@ -470,6 +470,10 @@
     line-height: 2rem;
 }
 
+.btn-link {
+    text-decoration: none;
+}
+
 .item-btn {
     background-color: transparent;
     border-radius: 20px;

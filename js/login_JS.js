@@ -9,7 +9,7 @@ sign_up_btn.addEventListener("click", () => {
 
 sign_in_btn.addEventListener("click", () => {
     container.classList.remove("sign-up-mode");
-<<<<<<< HEAD
+
 });
 
 
@@ -34,6 +34,4 @@ login.addEventListener("click", () => {
 
 });
 
-=======
-});
->>>>>>> 7767cad5b8a5994a870310ccc1ac3f6760d31eac
+
