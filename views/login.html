@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../asset/img/Explore/img_app.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../asset/css/login_style.css" />
+    <link rel="stylesheet" href="../asset/css/base.css" />
+    <script src="../js/login_JS.js" defer></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <img src="../asset/img_login/form_Bg1.jpg" alt="" />
+          <form action="/auth/login" class="sign-in-form" method="post">
+            <h2 class="title">Sign In</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="password" />
+            </div>
+            <input type="submit" value="Login" class="btn btn-submit solid" />
+            <p class="social-text">Or Sign In Using</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-github"></i>
+                <span>Github</span>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+                <span>Google</span>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3><span style="color: #fffcc7">Hello,</span> Friend!</h3>
+            <p>
+              Register with your personal details to use all of site features
+            </p>
+            <a href="/register"
+              ><button class="btn transparent" id="sign-up-btn">
+                Sign up
+              </button></a
+            >
+          </div>
+          <img
+            src="../asset/img_login/kidimg_loginbg.png"
+            class="image"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
