@@ -2,7 +2,6 @@ const express = require("express");
 const mysql = require("mysql");
 const dotenv = require("dotenv");
 const path = require("path");
-var cons = require("consolidate");
 
 dotenv.config({ path: "./.env" });
 
@@ -15,22 +14,22 @@ const db = mysql.createConnection({
   database: process.env.DATABASE,
 });
 
-const publicDirectory = path.join(__dirname, "./asset/css");
-app.use(express.static(__dirname + "/public"));
+// Set public directory for static files
+const publicDirectory = path.join(__dirname, "./public");
 app.use(express.static(publicDirectory));
 
 // Parse URL encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded({ extended: false }));
 
-// Parse Json encoded bodies (as sent by API client)
-app.use(express.json);
+// Parse JSON encoded bodies (as sent by API client)
+app.use(express.json());
 
-console.log(__dirname);
-
+// Set views directory and view engine
 app.set("views", path.join(__dirname, "views"));
 app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
-app.use("/css", express.static(__dirname + "/css"));
+
+// Connect to the database
 db.connect((err) => {
   if (err) {
     throw err;

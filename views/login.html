@@ -5,33 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
-      href="../asset/img/Explore/img_app.png"
+      href="/assets/img/Explore/img_app.png"
       type="image/x-icon"
     />
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="stylesheet" href="../asset/css/login_style.css" />
-    <link rel="stylesheet" href="../asset/css/base.css" />
-    <script src="../js/login_JS.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/login_style.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <script src="/assets/js/login_JS.js" defer></script>
     <title>Login</title>
   </head>
   <body>
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <img src="../asset/img_login/form_Bg1.jpg" alt="" />
+          <img src="/assets/img_login/form_Bg1.jpg" alt="" />
           <form action="/auth/login" class="sign-in-form" method="post">
             <h2 class="title">Sign In</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="username" />
+              <input
+                type="text"
+                placeholder="username"
+                name="username"
+                required
+              />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="password" />
+              <input
+                type="password"
+                placeholder="password"
+                name="password"
+                required
+              />
             </div>
             <input type="submit" value="Login" class="btn btn-submit solid" />
             <p class="social-text">Or Sign In Using</p>
@@ -63,14 +72,12 @@
             <p>
               Register with your personal details to use all of site features
             </p>
-            <a href="/register"
-              ><button class="btn transparent" id="sign-up-btn">
-                Sign up
-              </button></a
-            >
+            <a href="/register">
+              <button class="btn transparent" id="sign-up-btn">Sign up</button>
+            </a>
           </div>
           <img
-            src="../asset/img_login/kidimg_loginbg.png"
+            src="/assets/img_login/kidimg_loginbg.png"
             class="image"
             alt=""
           />

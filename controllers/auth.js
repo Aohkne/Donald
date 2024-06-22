@@ -27,7 +27,7 @@ exports.login = (req, res) => {
           message: "Email or Password is incorrect",
         });
       } else {
-        const id = results[0].id;
+        const { id } = results[0];
         const token = jwt.sign({ id }, process.env.JWT_SECRET, {
           expiresIn: process.env.JWT_EXPIRES_IN,
         });
@@ -51,7 +51,7 @@ exports.login = (req, res) => {
 exports.register = (req, res) => {
   console.log("req.body");
 
-  const { name, email, password, passwordConfirm } = req.body;
+  const { username, email, password, passwordConfirm } = req.body;
 
   db.query(
     "select email FROM users where email = ?",
@@ -60,7 +60,7 @@ exports.register = (req, res) => {
       if (error) {
         console.log(error);
       }
-      if (result.length > 0) {
+      if (results.length > 0) {
         return res.render("register", {
           message: "That email is already in use",
         });
@@ -75,7 +75,7 @@ exports.register = (req, res) => {
 
       db.query(
         "insert into users set ? ",
-        { name: name, email: email, password: hashedPassword },
+        { name: username, email: email, password: hashedPassword },
         (error, results) => {
           if (error) {
             console.log(error);
