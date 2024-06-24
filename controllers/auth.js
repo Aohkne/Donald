@@ -10,6 +10,7 @@ const db = mysql.createConnection({
 });
 
 exports.login = (req, res) => {
+  console.log(req.body);
   const { email, password } = req.body;
 
   db.query(
@@ -19,31 +20,28 @@ exports.login = (req, res) => {
       if (error) {
         console.log(error);
       }
-      if (
-        results.length == 0 ||
-        !(await bcrypt.compare(password, results[0].password))
-      ) {
-        return res.status(401).render("login", {
-          message: "Email or Password is incorrect",
+      if (results.length === 0) {
+        return res.render("login", {
+          message: "Email or password is incorrect",
         });
-      } else {
-        const { id } = results[0];
-        const token = jwt.sign({ id }, process.env.JWT_SECRET, {
-          expiresIn: process.env.JWT_EXPIRES_IN,
-        });
-
-        console.log("The token is: " + token);
-
-        const cookieOptions = {
-          expires: new Date(
-            Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
-          ),
-          httpOnly: true,
-        };
-
-        res.cookie("jwt", token, cookieOptions);
-        res.status(200).redirect("/");
       }
+
+      const user = results[0];
+
+      const passwordMatch = await bcrypt.compare(password, user.password);
+      if (!passwordMatch) {
+        return res.render("login", {
+          message: "Email or password is incorrect",
+        });
+      }
+
+      // Assuming a session management system is in place
+      req.session.userId = user.id;
+      req.session.userName = user.name;
+
+      res.render("login", {
+        message: "Login successful",
+      });
     }
   );
 };

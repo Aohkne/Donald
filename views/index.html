@@ -1,51 +1,47 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Donald</title>
-
-    <!-- Logo -->
     <link
       rel="icon"
-      href="../asset/img/Explore/img_app.png"
+      href="/asset/img/Explore/img_app.png"
       type="image/x-icon"
     />
 
-    <!-- link css -->
-    <link rel="stylesheet" type="text/css" href="../asset/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../asset/css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../asset/css/grid.css" />
-    <link rel="stylesheet" type="text/css" href="../asset/css/responsive.css" />
+    <link href="/public/asset/css/base.css" />
+    <link rel="stylesheet" href="/public/asset/css/base.css" />
+    <link rel="stylesheet" href="/public/asset/css/grid.css" />
+    <link rel="stylesheet" href="/public/asset/css/responsive.css" />
+    <link rel="stylesheet" href="/public/asset/css/style.css" />
     <link
       rel="stylesheet"
-      href="../asset/font/fontawesome-free-6.4.2-web/css/all.min.css"
+      href="/public/asset/font/fontawesome-free-6.4.2-web/css/all.min.css"
     />
-    <!-- link javascript -->
-    <script src="../js/main.js" defer></script>
   </head>
-
   <body>
     <!-- 404 -->
     <div
-      style="background-image: url(./asset/img/404.jpg)"
+      style="background-image: url(/asset/img/404.jpg)"
       class="img_404 hide-on-PC"
     ></div>
 
     <!-- app -->
-
     <div class="app">
       <!-- nav -->
-      <div class="header__container">
+      <nav class="header__container">
         <div class="nav row">
-          <a href="./index.html" class="logo-link col l-2 m-3 c-3">
-            <img class="nav__logo" src="../asset/img/Home/logo.png" alt="" />
+          <a href="/" class="logo-link col l-2 m-3 c-3">
+            <img
+              class="nav__logo"
+              src="/public/asset/img/Home/logo.png"
+              alt="Logo"
+            />
           </a>
-
           <div class="nav-iconMenu col l-0 m-0 c-2 hide-on-PC hide-on-tablet">
             <i class="fa-solid fa-bars"></i>
           </div>
-
           <div class="nav-menu col l-7 m-5 c-12">
             <ul class="nav-list">
               <li class="nav-items">
@@ -62,26 +58,27 @@
               </li>
             </ul>
           </div>
-
-          <div class="nav-user col l-3 m-4 c-7 hide-on-moblile">
+          <div class="nav-user col l-3 m-4 c-7 hide-on-mobile">
             <a href="/login" class="nav-users__link">Get Started</a>
           </div>
         </div>
-      </div>
+      </nav>
 
       <!-- bot -->
       <a href="" class="bot_link">
-        <img src="../asset/img/Explore/img_bot.png" alt="" class="bot-img" />
+        <img
+          src="/public/asset/img/Explore/img_bot.png"
+          class="bot-img"
+          alt="Bot Image"
+        />
       </a>
 
       <!-- Home PAGE -->
-
-      <div id="home_page-bg" class="">
-        <img src="../asset/img/Home/img_Home.png" alt="" />
-
+      <section id="home_page-bg">
+        <img src="/public/asset/img/Home/img_Home.png" alt="Home Image" />
         <div class="home_page grid wide">
           <div class="home_page-container col l-4 m-12 c-12">
-            <h1 class="home_page-title col l-12 hide-on-moblile">Donald</h1>
+            <h1 class="home_page-title col l-12 hide-on-mobile">Donald</h1>
             <p class="home_page-content col l-12">
               The Donald Project offers online courses, early intervention
               therapy, psychological counselling, life skills, and social
@@ -89,15 +86,17 @@
               aims to assist them in reaching their full potential, integrating
               into society, and fostering a supportive environment.
             </p>
-            <button class="home_page-btn l-6 hide-on-moblile">More Info</button>
+            <button class="home_page-btn l-6 hide-on-mobile">More Info</button>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Explore PAGE -->
-      <div id="explore_page-bg" class="grid">
-        <img src="../asset/img/Explore/img_Explore.png" alt="" />
-
+      <section id="explore_page-bg" class="grid">
+        <img
+          src="/public/asset/img/Explore/img_Explore.png"
+          alt="Explore Image"
+        />
         <div class="explore_page">
           <div class="grid wide">
             <div class="container-explore_page">
@@ -107,7 +106,6 @@
                 to it by clicking on the read more section
               </p>
             </div>
-
             <div class="blog-explore_page">
               <div class="row">
                 <div class="blog-items col l-5 m-5 c-5">
@@ -123,11 +121,13 @@
                       </a>
                     </div>
                     <div class="blog-img">
-                      <img src="../asset/img/Explore/img1_blog.png" alt="" />
+                      <img
+                        src="/public/asset/img/Explore/img1_blog.png"
+                        alt="Blog Image 1"
+                      />
                     </div>
                   </div>
                 </div>
-
                 <div class="blog-items col l-3 m-5 c-5">
                   <div class="blog-content">
                     <div class="blog-info">
@@ -141,12 +141,14 @@
                       </a>
                     </div>
                     <div class="blog-img">
-                      <img src="../asset/img/Explore/img2_blog.png" alt="" />
+                      <img
+                        src="/public/asset/img/Explore/img2_blog.png"
+                        alt="Blog Image 2"
+                      />
                     </div>
                   </div>
                 </div>
-
-                <div class="blog-items col l-3 m-5 c-6 hide-on-moblile">
+                <div class="blog-items col l-3 m-5 c-6 hide-on-mobile">
                   <div class="blog-content">
                     <div class="blog-info">
                       <div class="blog-author">Author</div>
@@ -156,12 +158,14 @@
                       </a>
                     </div>
                     <div class="blog-img">
-                      <img src="../asset/img/Explore/img3_blog.png" alt="" />
+                      <img
+                        src="/public/asset/img/Explore/img3_blog.png"
+                        alt="Blog Image 3"
+                      />
                     </div>
                   </div>
                 </div>
-
-                <div class="blog-items col l-3 m-5 c-6 hide-on-moblile">
+                <div class="blog-items col l-3 m-5 c-6 hide-on-mobile">
                   <div class="blog-content">
                     <div class="blog-info">
                       <div class="blog-author">Author</div>
@@ -171,12 +175,14 @@
                       </a>
                     </div>
                     <div class="blog-img">
-                      <img src="../asset/img/Explore/img4_blog.png" alt="" />
+                      <img
+                        src="/public/asset/img/Explore/img4_blog.png"
+                        alt="Blog Image 4"
+                      />
                     </div>
                   </div>
                 </div>
-
-                <div class="blog-items col l-3 m-5 c-6 hide-on-moblile-tablet">
+                <div class="blog-items col l-3 m-5 c-6 hide-on-mobile-tablet">
                   <div class="blog-content">
                     <div class="blog-info">
                       <div class="blog-author">Author</div>
@@ -186,12 +192,14 @@
                       </a>
                     </div>
                     <div class="blog-img">
-                      <img src="../asset/img/Explore/img2_blog.png" alt="" />
+                      <img
+                        src="/public/asset/img/Explore/img2_blog.png"
+                        alt="Blog Image 5"
+                      />
                     </div>
                   </div>
                 </div>
-
-                <div class="blog-items col l-5 m-5 c-6 hide-on-moblile-tablet">
+                <div class="blog-items col l-5 m-5 c-6 hide-on-mobile-tablet">
                   <div class="blog-content">
                     <div class="blog-info">
                       <div class="blog-author">Author</div>
@@ -201,7 +209,10 @@
                       </a>
                     </div>
                     <div class="blog-img">
-                      <img src="../asset/img/Explore/img1_blog.png" alt="" />
+                      <img
+                        src="/public/asset/img/Explore/img1_blog.png"
+                        alt="Blog Image 6"
+                      />
                     </div>
                   </div>
                 </div>
@@ -209,533 +220,145 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Download PAGE -->
-      <div class="download_page-bg grid hide-on-moblile">
+      <!-- COURSE PAGE -->
+      <section id="course_page-bg">
         <img
-          src="../asset/img/Explore/img_Download.png"
-          alt=""
-          class="download_page-bg-img"
+          src="/public/asset/img/Course/Course_img/img3_Course.png"
+          alt="Course Image"
         />
-
-        <div class="download_page">
-          <div class="grid wide">
-            <div class="row">
-              <div class="download_page-container col l-5 m-12 c-10">
-                <h1 class="download_page-title">Download This App</h1>
-                <div class="download_page-description">
-                  <img
-                    src="../asset/img/Explore/img_app.png"
-                    alt=""
-                    class="download_page-img"
-                  />
-                  <p class="download_page-content">
-                    You can download this application to your phone to
-                    conveniently monitor and observe your children.
-                  </p>
-                </div>
-                <div class="download_page-download">
-                  <div class="download_page-app">
-                    <img
-                      src="../asset/img/Explore/google_play.png"
-                      alt=""
-                      class="download_page-imgChplay"
-                    />
-                    <img
-                      src="../asset/img/Explore/app_store.png"
-                      alt=""
-                      class="download_page-imgAppstore"
-                    />
-                  </div>
-                  <img
-                    src="../asset/img/Explore/qr_code.png"
-                    alt=""
-                    class="download_page-imgQr"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Course PAGE -->
-      <div id="course_page-bg" class="grid">
         <div class="course_page grid wide">
-          <!-- slider -->
-          <div style="background-image: url()" class="slider">
-            <!-- slider img -->
-            <div class="slider-list">
-              <div class="slider-item">
-                <div
-                  style="
-                    background-image: url(./asset/img/Course/img1_slider.png);
-                  "
-                  class="slider-img"
-                >
-                  <div class="slider-content">
-                    <div class="item-title">Test For Your Child</div>
-                    <div class="item-description">
-                      If your child has any health or mental problems. Suggest
-                      some learning tips for children to help improve that
-                      problem
-                    </div>
-                    <button class="item-btn">TEST NOW</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slider-item">
-                <div
-                  style="
-                    background-image: url(./asset/img/Course/img2_slider.png);
-                  "
-                  class="slider-img"
-                >
-                  <div class="slider-content">
-                    <div class="item-title">Advertisement</div>
-                    <div class="item-description">
-                      Here we advertise. Contact us via
-                    </div>
-                    <button class="item-btn">CONTACT</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slider-item">
-                <div
-                  style="
-                    background-image: url(./asset/img/Course/img3_slider.png);
-                  "
-                  class="slider-img"
-                >
-                  <div class="slider-content">
-                    <div class="item-title">Idioms</div>
-                    <div class="item-description">
-                      Calmly handle all situations
-                    </div>
-                    <button class="item-btn">CONTACT</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slider-item">
-                <div
-                  style="
-                    background-image: url(./asset/img/Course/img1_slider.png);
-                  "
-                  class="slider-img"
-                >
-                  <div class="slider-content">
-                    <div class="item-title">Test For Your Child</div>
-                    <div class="item-description">
-                      If your child has any health or mental problems. Suggest
-                      some learning tips for children to help improve that
-                      problem
-                    </div>
-                    <button class="item-btn">TEST NOW</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slider-item">
-                <div
-                  style="
-                    background-image: url(./asset/img/Course/img2_slider.png);
-                  "
-                  class="slider-img"
-                >
-                  <div class="slider-content">
-                    <div class="item-title">Advertisement</div>
-                    <div class="item-description">
-                      Here we advertise. Contact us via
-                    </div>
-                    <button class="item-btn">CONTACT</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- slider button -->
-            <div class="slider-button">
-              <button id="button_pre"></button>
-              <button id="button_next">></button>
-            </div>
-
-            <!-- sldier dots -->
-            <ul class="slider-dot">
-              <li class="dot-item__active"></li>
-              <li class="dot-item"></li>
-              <li class="dot-item"></li>
-              <li class="dot-item"></li>
-              <li class="dot-item"></li>
-            </ul>
-          </div>
-
-          <!-- course -->
-          <div class="course_page-title">Course</div>
-          <div class="course_page-content grid">
-            <div class="course_page-learning row">
-              <div class="course-item col l-3 m-6 c-12">
-                <a href="./course" class="course-item-link">
-                  <img
-                    src="../asset/img/Course/Course_img/Miracles-come_Course.png"
-                    alt=""
-                    class="course-item-img"
-                  />
-                </a>
-              </div>
-
-              <div class="course-item col l-3 m-6 c-12">
-                <a href="./course" class="course-item-link">
-                  <img
-                    src="../asset/img/Course/Course_img/5Tips-help_Course.png"
-                    alt=""
-                    class="course-item-img"
-                  />
-                </a>
-              </div>
-
-              <div class="course-item col l-3 m-6 c-12">
-                <a href="./course" class="course-item-link">
-                  <img
-                    src="../asset/img/Course/Course_img/img3_Course.png"
-                    alt=""
-                    class="course-item-img"
-                  />
-                </a>
-              </div>
-
-              <div class="course-item col l-3 m-6 c-12">
-                <a href="./course" class="course-item-link">
-                  <img
-                    src="../asset/img/Course/Course_img/img4_Course.png"
-                    alt=""
-                    class="course-item-img"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- About PAGE -->
-      <div id="about_page" class="grid">
-        <!-- About Us -->
-
-        <div class="aboutUS-container">
-          <img
-            src="../asset/img/About/aboutUs-bg_img.png"
-            alt=""
-            class="aboutUS-page-bg"
-          />
-
-          <div class="aboutUS-page">
-            <h1 class="aboutUS-page-title">ABOUT US</h1>
-            <p class="aboutUS-page-description">
-              The Donald Project supports autistic children and their families
-              through services like online courses, life skills training, and
-              social communication classes. It aims to help children reach their
-              potential and integrate into society while empowering families
-              with the tools and knowledge needed for effective support.
-            </p>
-          </div>
-        </div>
-
-        <!-- Our Purpose -->
-
-        <div class="ourPurpose-page-bg">
-          <div class="ourPurpose-page grid wide">
-            <div class="ourPurpose-page-container row">
-              <div class="ourPurpose-page-content col l-6 m-12 c-12">
-                <h1 class="ourPurpose-page-title">Our Purpose</h1>
-                <p class="ourPurpose-page-description">
-                  The purpose of The Donald Project is to provide comprehensive
-                  support for autistic children and their families through a
-                  range of specialized services. These services are designed to
-                  help autistic children reach their full potential, integrate
-                  into society, and ensure a supportive environment for their
-                  growth and development.
-                </p>
-              </div>
-
-              <div class="ourPurpose-page-img col l-6 m-12 c-12">
-                <div class="row">
-                  <div class="ourPurpose-page-item col l-6 m-12 c-12">
-                    <img src="../asset/img/About/purpose_img1.jpg" alt="" />
-                  </div>
-
-                  <div class="ourPurpose-page-item col l-6 m-12 c-12">
-                    <img src="../asset/img/About/purpose_img2.jpg" alt="" />
-                  </div>
-
-                  <div class="ourPurpose-page-item col l-12 m-12 c-12">
-                    <img src="../asset/img/About/purpose_img3.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact -->
-        <div class="contactUs-page-bg">
-          <div class="contactUs-page grid wide">
-            <div class="contactUs-page-container">
-              <div class="row">
-                <h1 class="contactUs-page-title col l-12 m-12 c-12">
-                  <span style="color: #8bb19c">Contact</span>
-                  Us
-                </h1>
-
-                <form action="" method="post" class="contactUs-page-form row">
-                  <div class="contactUs-page-items col l-6 m-12 c-12">
-                    <input
-                      type="text"
-                      name="user"
-                      placeholder="Name:"
-                      class="contactUs-page-input"
-                    />
-                  </div>
-
-                  <div class="contactUs-page-items col l-6 m-12 c-12">
-                    <input
-                      type="email"
-                      name="mail"
-                      placeholder="Email:"
-                      class="contactUs-page-input"
-                    />
-                  </div>
-
-                  <div class="contactUs-page-items col l-12 m-12 c-12">
-                    <input
-                      type="text"
-                      name="message"
-                      placeholder="Massage:"
-                      class="contactUs-page-input"
-                    />
-                  </div>
-
-                  <div class="contactUs-page-submit col l-2 m-12 c-12">
-                    <input type="submit" name="send" value="SEND" />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Our Member -->
-        <div class="ourMember-page grid wide">
-          <div class="ourMember-page-container">
-            <div class="row">
-              <div class="ourMember-page-title col l-12 m-12 c-12">
-                <span style="color: #8bb19c">Meet</span>
-                Our Members
-              </div>
-              <p class="ourMember-page-description col l-12 m-12 c-12">
-                Below are the members implementing the project.
+          <div class="course_page-container row">
+            <div class="col l-12 m-12 c-12">
+              <h1 class="title-course_page">WHAT WE PROVIDE</h1>
+              <p class="content-course_page">
+                We help to provide all the necessary services, such as therapy,
+                skills training, psychology counselling, etc. All services are
+                guaranteed.
               </p>
-              <div class="ourMember-page-member col l-12 m-12 c-12">
-                <div class="row">
-                  <div class="ourMember-page-item col l-3 m-6 c-6">
-                    <div class="row">
-                      <div class="col l-12 c-5">
-                        <img
-                          src="../asset/img/About/HuuKhoa.jpg"
-                          alt=""
-                          class="ourMember-page-imgMember"
-                        />
-                      </div>
-
-                      <div class="ourMember-page-info col l-12 c-7">
-                        <div class="row">
-                          <div class="ourMember-page-name col l-12 c-12">
-                            Huu Khoa
-                          </div>
-                          <div class="ourMember-page-contact col l-12 c-12">
-                            <a href="" class="ourMember-page-link">
-                              <i
-                                class="ourMember-page-Facebook fa-brands fa-facebook"
-                              ></i>
-                            </a>
-
-                            <a href="mailto:" class="ourMember-page-link">
-                              <i
-                                class="ourMember-page-mail fa-solid fa-envelope"
-                              ></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+            <div class="course_content row">
+              <div class="course-items col l-6 m-6 c-12">
+                <div class="row course-info">
+                  <div class="course-icon col l-1 m-1 c-2">
+                    <i class="fa-solid fa-book"></i>
                   </div>
-
-                  <div class="ourMember-page-item col l-3 m-6 c-6">
-                    <div class="row">
-                      <div class="col l-12 c-5">
-                        <img
-                          src="../asset/img/About/LamPhat.jpg"
-                          alt=""
-                          class="ourMember-page-imgMember"
-                        />
-                      </div>
-
-                      <div class="ourMember-page-info col l-12 c-7">
-                        <div class="row">
-                          <div class="ourMember-page-name col l-12 c-12">
-                            Lam Phat
-                          </div>
-                          <div class="ourMember-page-contact col l-12 c-12">
-                            <a href="" class="ourMember-page-link">
-                              <i
-                                class="ourMember-page-Facebook fa-brands fa-facebook"
-                              ></i>
-                            </a>
-
-                            <a href="mailto:" class="ourMember-page-link">
-                              <i
-                                class="ourMember-page-mail fa-solid fa-envelope"
-                              ></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="ourMember-page-item col l-3 m-6 c-6">
-                    <div class="row">
-                      <div class="col l-12 c-5">
-                        <img
-                          src="../asset/img/About/DaiNhan.jpg"
-                          alt=""
-                          class="ourMember-page-imgMember"
-                        />
-                      </div>
-
-                      <div class="ourMember-page-info col l-12 c-7">
-                        <div class="row">
-                          <div class="ourMember-page-name col l-12 c-12">
-                            Dai Nhan
-                          </div>
-                          <div class="ourMember-page-contact col l-12 c-12">
-                            <a href="" class="ourMember-page-link">
-                              <i
-                                class="ourMember-page-Facebook fa-brands fa-facebook"
-                              ></i>
-                            </a>
-
-                            <a href="mailto:" class="ourMember-page-link">
-                              <i
-                                class="ourMember-page-mail fa-solid fa-envelope"
-                              ></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="ourMember-page-item col l-3 m-6 c-6">
-                    <div class="row">
-                      <div class="col l-12 c-5">
-                        <img
-                          src="../asset/img/About/"
-                          alt=""
-                          class="ourMember-page-imgMember"
-                        />
-                      </div>
-
-                      <div class="ourMember-page-info col l-12 c-7">
-                        <div class="row">
-                          <div class="ourMember-page-name col l-12 c-12">
-                            Bao Nguyen
-                          </div>
-                          <div class="ourMember-page-contact col l-12 c-12">
-                            <a href="" class="ourMember-page-link">
-                              <i
-                                class="ourMember-page-Facebook fa-brands fa-facebook"
-                              ></i>
-                            </a>
-
-                            <a href="mailto:" class="ourMember-page-link">
-                              <i
-                                class="ourMember-page-mail fa-solid fa-envelope"
-                              ></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="course-content col l-10 m-10 c-10">
+                    <h3 class="course-header">THERAPY</h3>
+                    <p class="course-description">
+                      Various forms of therapy provided, including behavioral,
+                      speech, and occupational therapy.
+                    </p>
                   </div>
                 </div>
               </div>
-
-              <!-- <button class="ourMember-page-btn">More</button> -->
+              <div class="course-items col l-6 m-6 c-12">
+                <div class="row course-info">
+                  <div class="course-icon col l-1 m-1 c-2">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+                  <div class="course-content col l-10 m-10 c-10">
+                    <h3 class="course-header">SKILLS TRAINING</h3>
+                    <p class="course-description">
+                      Life skills training to help individuals become more
+                      independent.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="course-items col l-6 m-6 c-12">
+                <div class="row course-info">
+                  <div class="course-icon col l-1 m-1 c-2">
+                    <i class="fa-solid fa-user-cog"></i>
+                  </div>
+                  <div class="course-content col l-10 m-10 c-10">
+                    <h3 class="course-header">PSYCHOLOGY COUNSELLING</h3>
+                    <p class="course-description">
+                      Professional psychological counselling services for
+                      individuals and families.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="course-items col l-6 m-6 c-12">
+                <div class="row course-info">
+                  <div class="course-icon col l-1 m-1 c-2">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                  </div>
+                  <div class="course-content col l-10 m-10 c-10">
+                    <h3 class="course-header">SUPPORT GROUPS</h3>
+                    <p class="course-description">
+                      Support groups for families to share experiences and gain
+                      support from others.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- ABOUT PAGE -->
+      <section id="about_page">
+        <div class="about_page grid wide">
+          <div class="about_page-container row">
+            <div class="col l-12 m-12 c-12">
+              <h1 class="title-about_page">ABOUT US</h1>
+              <p class="content-about_page">
+                We are dedicated to providing comprehensive services for
+                children with autism and their families. Our goal is to support
+                and empower individuals to reach their full potential.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT PAGE -->
+      <section id="contact_page">
+        <div class="contact_page grid wide">
+          <div class="contact_page-container row">
+            <div class="col l-12 m-12 c-12">
+              <h1 class="title-contact_page">CONTACT US</h1>
+              <form class="contact-form" action="/submit_contact" method="POST">
+                <div class="row">
+                  <div class="col l-6 m-6 c-12">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="col l-6 m-6 c-12">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col l-12 m-12 c-12">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col l-12 m-12 c-12">
+                    <button type="submit" class="contact-btn">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Footer -->
       <footer class="footer">
-        <div class="grid wide">
-          <div class="footer-container row">
-            <div class="footer-item col l-6 m-12 c-12">
-              <img
-                src="../asset/img/Home/logo.png"
-                alt=""
-                class="footer_logo"
-              />
-              <p class="footer-content">
-                If you want advice or detailed information about our project,
-                you can contact one of our social networks below.
-              </p>
-              <div class="footer-icon row">
-                <a href="" class="footer-link col l-1 c-2">
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="" class="footer-link col l-1 c-2">
-                  <i class="fa-brands fa-square-instagram"></i>
-                </a>
-                <a
-                  href="https://github.com/Aohkne/Donald"
-                  class="footer-link col l-1 c-2"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="footer-item col l-3 m-6 c-6">
-              <h1 class="footer-title">Navigation</h1>
-              <a href="#home_page-bg" class="footer-item-link">Home</a>
-              <a href="#explore_page-bg" class="footer-item-link">Explore</a>
-              <a href="#course_page-bg" class="footer-item-link">Course</a>
-              <a href="#about_page" class="footer-item-link">About</a>
-            </div>
-
-            <div class="footer-item col l-3 m-6 c-6">
-              <h1 class="footer-title">Contact</h1>
-              <div href="" class="footer-item-contact">
-                <i class="fa-solid fa-location-dot"></i>
-                Ly Tu Trong, TP.HCM
-              </div>
-              <div href="" class="footer-item-contact">
-                <i class="fa-solid fa-phone"></i>
-                098171618
-              </div>
-              <div href="" class="footer-item-contact">
-                <i class="fa-solid fa-envelope"></i>
-                satthumientay@gmail.com
-              </div>
+        <div class="footer-container grid wide">
+          <div class="row">
+            <div class="footer-info col l-12 m-12 c-12">
+              <p>© 2024 Donald Project. All rights reserved.</p>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">©2024 - Project</div>
       </footer>
     </div>
   </body>

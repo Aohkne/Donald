@@ -22,10 +22,15 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "hbs": "^4.2.0",
+    "html": "^1.0.0",
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
     "nodemon": "^3.1.4",
     "path": "^0.12.7",
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "url-loader": "^4.1.1"
   }
 }
