@@ -1,4 +1,4 @@
-# Donald - Project: Support platforms for children with depression
+# Donald - Project: A Cross-platform Website for Supporting Children with Autism 
 
 ## Introduction
 
