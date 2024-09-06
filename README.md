@@ -1,6 +1,6 @@
 # Donald - Project: Support platforms for children with depression
 
-## Introduce
+## Introduction
 
 
   #### Members
