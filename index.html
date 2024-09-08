@@ -24,7 +24,7 @@
 
 
     <!-- link javascript -->
-    <script src="js/main.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -67,6 +67,54 @@
 
                 <div class="nav-user col l-3 m-4 c-7 hide-on-moblile">
                     <a href="./login.html" class="nav-users__link">Get Started</a>
+                    <div class="nav-user-container">
+                        <i class="fa-solid fa-circle-user nav-user-icon"></i>
+                    </div>
+                </div>
+                <div class="nav-user-menu">
+                    <div class="nav-user-menu-container">
+
+                        <div class="nav-user-content">
+                            <div class="nav-user-information">
+                                <i class="fa-solid fa-circle-user nav-user-information-icon"></i>
+                                <div class="nav-user-menu-name">Username</div>
+                            </div>
+                            <div class="nav-user-menu-exit">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+
+                        <a href="#" class="nav-user-menu-link">
+                            <h1 class="nav-user-menu-title">
+                                <i class="fa-solid fa-gear nav-user-menu-icon"></i>
+                                Setting
+                            </h1>
+                        </a>
+
+                        <a href="#" class="nav-user-menu-link">
+                            <h1 class="nav-user-menu-title">
+                                <i class="fa-solid fa-circle-question nav-user-menu-icon"></i>
+                                Help
+                            </h1>
+                        </a>
+
+                        <a href="#" class="nav-user-menu-link">
+                            <h1 class="nav-user-menu-title">
+                                <i class="fa-solid fa-moon nav-user-menu-icon"></i>
+                                Accessibility
+                            </h1>
+                        </a>
+
+                        <a href="#" class="nav-user-menu-link">
+                            <h1 class="nav-user-menu-title">
+                                <i class="fa-solid fa-circle-info nav-user-menu-icon"></i>
+                                Comments
+                            </h1>
+                        </a>
+
+                        <button class="logOut-Btn">Sign out</button>
+
+                    </div>
                 </div>
 
 
@@ -77,7 +125,7 @@
         </div>
 
         <!-- bot -->
-        <a href="" class="bot_link">
+        <a href="#" class="bot_link">
             <img src="./asset/img/Explore/img_bot.png" alt="" class="bot-img">
         </a>
 

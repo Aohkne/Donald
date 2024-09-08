@@ -1,61 +1,26 @@
 // open-close menu
 // const icon = document.getElementsByClassName('fa-bars');
-let nav = document.querySelector('.menu-icon');
+let navIcon = document.querySelector('.nav-icon');
+let menuIcon = document.querySelector('.menu-icon');
 let menu = document.querySelector('.menu');
+let menuBefore = document.querySelector(('.menu'), ':before');
+
 let menuContainer = document.querySelector('.menu-container');
 let videoContainer = document.querySelector('.video_container');
 
-nav.onclick = function () {
-    // menuContainer.classList.toggle('l-3', 'l-1');
-    if (menu.style.display == 'none') {
 
-        //menu
-        menu.style.display = 'block';
-        menuContainer.classList.add('l-3');
-        menuContainer.classList.remove('l-0');
-
-        //video
-        videoContainer.classList.add('l-9');
-        videoContainer.classList.remove('l-12');
-
-    } else {
-        //menu
-        menu.style.display = 'none';
-        menuContainer.classList.add('l-0');
-        menuContainer.classList.remove('l-3');
-
-        //video
-        videoContainer.classList.add('l-12');
-        videoContainer.classList.remove('l-9');
-    }
-
+navIcon.onclick = () => {
+    menu.style.display = 'block';
 };
 
-// //open - close content
-// let title = document.querySelectorAll('.menu-title');
+menuIcon.onclick = () => {
+    menu.style.display = 'none';
+};
 
-// menu.forEach(function (element) {
-//     let child = element.childNodes;
-//     child.forEach(function (e) {
-//         console.log(e.nodeName);
-//         if (e.nodeName == "H1") {
-//             e.onclick = function () {
-//                 child.forEach(function (item) {
-//                     if (item.nodeName == "A") {
-//                         if (item.style.display == 'none') {
-//                             item.style.display = 'block';
-//                         } else {
-//                             item.style.display = 'none';
+menuBefore.onclick = () => {
+    menu.style.display = 'none';
+};
 
-//                         }
-//                     }
-//                 });
-//             };
-//         }
-//     });
-//     // child.onclick()
-
-// });
 
 
 
@@ -102,10 +67,12 @@ fetch("./js/database/courseParent.json")
 
 //show video when click
 let video = "";
+let titlePage = document.querySelector('title');
+
 function watch(title, url, date, description) {
     // let videoContainer = document.querySelector('.video_container');
+
     console.log(title)
-    console.log(url)
     video = `
         <iframe src="${url + "?rel=0&enablejsapi=1"}"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -124,17 +91,13 @@ function watch(title, url, date, description) {
             </div>
 
             <a href="${url}" class="video-link">Source:${url}</a>
+ 
         </div> 
         `;
 
+    titlePage.innerHTML = `${title}`;
     videoContainer.innerHTML = video + listCourse;
+
+    //call check face
+
 }
-
-
-
-
-
-
-
-
-

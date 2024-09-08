@@ -1,5 +1,4 @@
-
-// open nav menu
+// open nav menu - on mobile
 let iconMenu = document.querySelector('.fa-bars');
 let navMenu = document.querySelector('.nav-menu');
 
@@ -14,6 +13,30 @@ iconMenu.onclick = function () {
     }
 
 }
+
+// open close user information
+
+let userIcon = document.querySelector('.nav-user-icon');
+let userMenu = document.querySelector('.nav-user-menu');
+let exitIcon = document.querySelector('.nav-user-menu-exit');
+
+let userMenuBefore = document.querySelector(('.nav-user-menu'), ':before');
+
+userIcon.onclick = () => {
+    userMenu.style.display = 'block';
+}
+
+exitIcon.onclick = () => {
+    userMenu.style.display = 'none';
+}
+
+
+// userMenuBefore.onclick = () => {
+//     userMenu.style.display = 'none';
+// }
+
+
+
 
 //slider
 let sliderList = document.querySelector('.slider-list');
@@ -72,3 +95,10 @@ sliderDot.forEach((li, key) => {
         reloadSlider();
     })
 })
+
+//login handle
+
+import { user, pass } from './login_JS.js';
+
+console.log(user);
+

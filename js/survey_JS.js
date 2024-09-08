@@ -4,6 +4,9 @@ let answerContainer = document.querySelector('#answer-container');
 let answerBtn = document.querySelectorAll('.btn');
 let nextBtn = document.querySelector('.next-btn');
 
+// count ques
+let countQues = document.querySelector('.number-ques');
+
 
 let ques = [];
 
@@ -26,12 +29,27 @@ fetch("./js/database/question.json")
     //Question handle
     .then(function (arr) {
 
-        //Next Question 
+        //Next Question - click
         nextBtn.addEventListener("click", () => {
             if (currQuesIndex < arr.length) {
                 handleNextBtn(arr);
             }
         })
+
+        //Next Question - enter
+        answerBtn.forEach(function (ans) {
+            ans.addEventListener("keypress", (e) => {
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    if (currQuesIndex < arr.length) {
+                        handleNextBtn(arr);
+                    }
+                }
+            })
+        });
+
+
+
         startQues(arr);
     })
 
@@ -59,8 +77,20 @@ function startQues(arr) {
     showQues(arr);
 }
 
+const currWidth = countQues.offsetWidth;
+let newWidth = currWidth;
+
 function showQues(arr) {
-    let question = arr[currQuesIndex]
+    let question = arr[currQuesIndex];
+
+    if (currQuesIndex >= 1) {
+        //increase count ques (+10%)
+        newWidth = newWidth + (currWidth * 1);
+        countQues.style.width = newWidth + 'px';
+        countQues.innerHTML = currQuesIndex + 1;
+    }
+
+    // question
     let questionNO = currQuesIndex + 1;
     Question.innerHTML = questionNO + ". " + question;
 
@@ -107,6 +137,7 @@ answerBtn[0].onclick = function () {
     score += 0;
 
 }
+
 answerBtn[1].onclick = function () {
     answerBtn[1].classList.add("add-Color");
     for (otherBtn of answerBtn) {
@@ -199,10 +230,12 @@ document.querySelector('form').addEventListener('submit', function (event) {
     } else if (score > 70) {
         Question.innerHTML = `According to the assessment, your child has level 3 autism.`
     }
-
-    nextBtn.style.display = "block";
-    nextBtn.innerHTML = `Back To Home`;
-    nextBtn.onclick = () => {
+    let backHomeBtn = document.querySelector('.backHome-btn');
+    countQues.style.display = 'none';
+    nextBtn.style.display = 'none'
+    backHomeBtn.style.display = 'block';
+    backHomeBtn.innerHTML = `Back To Home`;
+    backHomeBtn.onclick = () => {
         window.location.href = './index.html';
     }
 
